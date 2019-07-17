@@ -1,0 +1,41 @@
+.rect {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 200px;
+  border:1px solid #c3c3c3;
+  background-image: url("http://ballympics.com/wp-content/uploads/2014/12/Club-Licensing-PIC-No-07-small-900x300.png");
+}
+
+.timeline-wrapper {
+  margin-top: 100px;
+}
+
+.period {
+  width: 50%;
+  float: left;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px 0 0;
+  padding: 0 5px;
+  height: 3px;
+  background-color: red;
+}
+
+.start-time {
+  position: absolute;
+  color: yellow;
+  font-size: 1em;
+  left: 0;
+  top: 2px;
+}
+
+.end-time {
+  position: absolute;
+  color: yellow;
+  font-size: 1em;
+  left: 100%;
+  top: 2px;
+}
