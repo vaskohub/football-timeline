@@ -2,40 +2,150 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: 200px;
-  border:1px solid #c3c3c3;
+  height: 300px;
+  border: 1px solid #c3c3c3;
   background-image: url("http://ballympics.com/wp-content/uploads/2014/12/Club-Licensing-PIC-No-07-small-900x300.png");
 }
 
 .timeline-wrapper {
   margin-top: 100px;
-}
-
-.period {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
+/*.period {*/
+/*  width: 50%;*/
+/*  float: left;*/
+/*}*/
+
 .timeline {
   position: relative;
-  margin: 50px 0 0;
+  margin: 140px 0 0;
   padding: 0 5px;
   height: 3px;
   background-color: red;
 }
 
+.time-marker {
+  position: absolute;
+  color: yellow;
+  font-size: 0.7em;
+  font-weight: bold;
+  left: 0;
+  top: 8px;
+}
+
 .start-time {
   position: absolute;
   color: yellow;
-  font-size: 1em;
+  font-size: 0.7em;
+  font-weight: bold;
   left: 0;
-  top: 2px;
+  top: 8px;
 }
 
 .end-time {
   position: absolute;
   color: yellow;
-  font-size: 1em;
-  left: 100%;
-  top: 2px;
+  font-size: 0.7em;
+  font-weight: bold;
+  left: calc(100% - 8px);
+  top: 8px;
+}
+
+.timeline-item {
+  position: absolute;
+  text-align: center;
+  border-bottom: none;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.first {
+  bottom: 0;
+  padding-bottom: 2px;
+}
+
+.first:after {
+  content: '';
+  display: block;
+  margin: 3px auto 0;
+  width: 3px;
+  height: 7px;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.second {
+  top: 0;
+  left: 0;
+  padding-top: 2px;
+}
+
+.second:before {
+  content: '';
+  display: block;
+  margin: 0 auto 3px;
+  width: 3px;
+  height: 7px;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.live-ball-white {
+  background-image: url("/assets/images/spriteheet.webp");
+  margin: auto;
+  background-position: -244px -188px;
+  background-size: 281px 255px;
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: contrast(200%);
+}
+
+.live-penalty-white {
+  margin: auto;
+  background-image: url("/assets/images/spriteheet.webp");
+  background-position: -244px -44px;
+  background-size: 281px 255px;
+  width: 22px;
+  height: 18px;
+  display: block;
+}
+
+.live-change-white {
+  margin: auto;
+  background-image: url("/assets/images/spriteheet.webp");
+  background-position: -56px -231px;
+  background-size: 281px 255px;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.live-yellow-card {
+  margin: auto;
+  background-image: url("/assets/images/spriteheet.webp");
+  background-position: -266px -105px;
+  background-size: 281px 255px;
+  width: 13px;
+  height: 18px;
+  display: block;
+}
+
+.live-red-card {
+  margin: auto;
+  background-image: url("/assets/images/spriteheet.webp");
+  background-position: -266px -123px;
+  background-size: 281px 255px;
+  width: 13px;
+  height: 18px;
+  display: block;
+}
+
+.has-tip {
+  border-bottom: dotted 1px #ccc;
+  color: #333;
+  cursor: help;
+  font-weight: bold;
 }
